@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Happiness Report</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="info-container">
+      <h1>World Happiness Report 2023</h1>
+      <p>
+        The World Happiness Map is an interactive data visualization that maps
+        out the happiness scores, GDP per capita, and social support for various
+        countries around the world.
+      </p>
+      <p>
+        The chart uses emoji symbols to represent the happiness score for each
+        country, with a smiley face for scores above 5 and a sad face for scores
+        below 5. Users can filter the data by country and explore the
+        relationships between GDP per capita, social support, and happiness
+        score.
+      </p>
+      <p>
+        The chart is built using D3.js and is based on the World
+        <a
+          href="https://worldhappiness.report/ed/2023/#appendices-and-data"
+          target="_blank"
+          >Happiness Report dataset 2023</a
+        >.
+      </p>
+      <hr />
+    </div>
+    <div id="controls">
+      <button id="filter">Filter</button>
+    </div>
+    <div id="country-checkboxes" class="hidden">
+      <button id="reset">Reset</button>
+    </div>
+    <div class="chart-container">
+      <div id="chart"></div>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
